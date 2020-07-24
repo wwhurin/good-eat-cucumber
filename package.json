@@ -5,12 +5,14 @@
   "author": "KIM HYO RIN <wwhurin0515@gmail.com>",
   "private": true,
   "scripts": {
-    "postinstall": "npm install express",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
-    "build": "node build/build.js"
+    "start": "node server.js",
+    "build": "node build/build.js",
+    "deploy": "git subtree push --prefix dist heroku master"
   },
   "dependencies": {
+    "express": "^4.17.1",
+    "server-static": "^2.0.5",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
