@@ -6,10 +6,10 @@ const path = require('path')
 module.exports = {
   build: {
     env: require('./prod.env'),
-    //index: path.resolve(__dirname, '../dist/index.html'),
-    index: path.resolve(__dirname, "../../cucumber-backend/public/index.html"),
-    //assetsRoot: path.resolve(__dirname, '../dist'),
-    assetsRoot: path.resolve(__dirname, '../../cucumber-backend/public'),
+    index: path.resolve(__dirname, '../dist/index.html'),
+    //index: path.resolve(__dirname, "../../cucumber-backend/public/index.html"),
+    assetsRoot: path.resolve(__dirname, '../dist'),
+    //assetsRoot: path.resolve(__dirname, '../../cucumber-backend/public'),
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     productionSourceMap: true,
