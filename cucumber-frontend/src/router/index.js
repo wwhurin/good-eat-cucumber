@@ -1,15 +1,22 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
+import mainPage from '../components/main/mainPage'
+import chatPage from '../components/chat/chatPage'
 
 Vue.use(Router)
 
 export default new Router({
-  routes: [
+  mode: 'history'
+  , routes: [
     {
       path: '/',
-      name: 'Hello',
-      component: Hello
+      name: 'main_page',
+      component: mainPage
+    }
+    , {
+      path: '/chat',
+      name: 'chat_page',
+      component: chatPage
     }
   ]
 })
